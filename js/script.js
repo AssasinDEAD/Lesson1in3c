@@ -18,7 +18,7 @@ $(".startBtn").click(function () {
 
    let finishNum = $("#finishNum").val();
 
-   for (let i = startNum; i <= finishNum; i++) {
+   for (let i = +startNum; i <= finishNum; i++) {
       if (startNum != 0 && finishNum != 0 && i % Math.sqrt(i) == 0) {
          console.log(i)
       }
