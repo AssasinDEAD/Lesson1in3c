@@ -13,15 +13,29 @@
 //    }
 // }
 
-$(".startBtn").click(function () {
-   let startNum = $("#startNum").val();
+// $(".startBtn").click(function () {
+//    let startNum = $("#startNum").val();
 
-   let finishNum = $("#finishNum").val();
+//    let finishNum = $("#finishNum").val();
 
-   for (let i = +startNum; i <= finishNum; i++) {
-      if (startNum != 0 && finishNum != 0 && i % Math.sqrt(i) == 0) {
-         console.log(i)
+//    for (let i = +startNum; i <= finishNum; i++) {
+//       if (startNum != 0 && finishNum != 0 && i % Math.sqrt(i) == 0) {
+//          console.log(i)
+
+//       }
+//    };
+
+// });
+
+function pyramyde(n) {
+
+   for (let i = 1; i <= n; i++) {
+      for (let j = 1; j <= i; j++) {
+         console.log(String(i));
       }
-   };
+   }
 
-});
+};
+
+
+pyramyde(30);
