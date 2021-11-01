@@ -86,16 +86,16 @@
 // findLetter("aere");
 
 function countLetters(letter, string) {
+   let count = 0;
+   letter.toLowerCase()
+   string.toLowerCase()
    for (let i = 0; i < string.length; i++) {
-      if (i == letter) {
-         letter.toLowerCase()
-         string.toLowerCase()
+      if (string[i] == letter) {
          count++;
-         console.log(count);
-
       }
    }
+   console.log(count);
 }
 
-countLetters("a", "araa")
+countLetters("a", "aarra serega arna")
 
