@@ -99,13 +99,13 @@
 // countLetters("a", "aaaAAAAAa")
 
 
-var students = ["Sonya", "Aneĺ", "Gala", "Kais", "Nura", "Disa", "Akhontii", "Zhasik", "Baha", "Nurda"];
+let students = ["Sonya", "Aneĺ", "Gala", "Kais", "Nura", "Disa", "Akhontii", "Zhasik", "Baha", "Nurda", "Amuha", "Bota", "Dancho", "Nurs", "Aiza"];
 
-var d = document;
+let d = document;
 d.g = d.getElementById;
 
-var ul = d.g("studentsList");
-var li = null;
+let ul = d.g("studentsList");
+let li = null;
 
 students.forEach((student) => {
    let li = d.createElement('li');
