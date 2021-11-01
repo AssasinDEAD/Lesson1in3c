@@ -66,11 +66,36 @@
 
 // });
 
-let table = {
-   w: 420,
-   h: "540mm",
-   findS() {
-      return this.h.includes("mm") ? this.w * +this.h.replace("mm", "") : this.w * +this.h
-   }
+// let table = {
+//    w: 420,
+//    h: "540mm",
+//    findS() {
+//       return this.h.includes("mm") ? this.w * +this.h.replace("mm", "") : this.w * +this.h
+//    }
 
+// }
+
+// function findLetter(a) {
+//    if (a.length % 2 == 0) {
+//       console.log(a[Math.floor(a.length / 2 - 1)] + a[Math.floor(a.length / 2)])
+//    } else {
+//       console.log(a[Math.floor(a.length / 2)])
+//    }
+// };
+
+// findLetter("aere");
+
+function countLetters(letter, string) {
+   for (let i = 0; i < string.length; i++) {
+      if (i == letter) {
+         letter.toLowerCase()
+         string.toLowerCase()
+         count++;
+         console.log(count);
+
+      }
+   }
 }
+
+countLetters("a", "araa")
+
