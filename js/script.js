@@ -85,15 +85,34 @@
 
 // findLetter("aere");
 
-function countLetters(letter, string) {
-   let count = 0;
-   string.toLowerCase()
-   for (let i = 0; i < string.length; i++) {
-      if (string.toLowerCase()[i] == letter) {
-         count++;
-      }
-   }
-   console.log(count);
-}
+// function countLetters(letter, string) {
+//    let count = 0;
+//    string.toLowerCase()
+//    for (let i = 0; i < string.length; i++) {
+//       if (string.toLowerCase()[i] == letter) {
+//          count++;
+//       }
+//    }
+//    console.log(count);
+// }
 
-countLetters("a", "aaaAAAAAa")
+// countLetters("a", "aaaAAAAAa")
+
+
+var students = ["Sonya", "Aneĺ", "Gala", "Kais", "Nura", "Disa", "Akhontii", "Zhasik", "Baha", "Nurda"];
+
+var d = document;
+d.g = d.getElementById;
+
+var ul = d.g("studentsList");
+var li = null;
+
+students.forEach((student) => {
+   let li = d.createElement('li');
+   ul.appendChild(li);
+   li.textContent = student;
+});
+
+// students.forEach((student) => {
+//    d.g("studentsList").innerHTML += '<li >' + student + '</li>';
+// });
