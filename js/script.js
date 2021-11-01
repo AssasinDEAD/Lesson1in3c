@@ -87,15 +87,13 @@
 
 function countLetters(letter, string) {
    let count = 0;
-   letter.toLowerCase()
    string.toLowerCase()
    for (let i = 0; i < string.length; i++) {
-      if (string[i] == letter) {
+      if (string.toLowerCase()[i] == letter) {
          count++;
       }
    }
    console.log(count);
 }
 
-countLetters("a", "aarra serega arna")
-
+countLetters("a", "aaaAAAAAa")
